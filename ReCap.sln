@@ -13,7 +13,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI", "ConsoleUI\Cons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{15576D1C-D837-4836-A0C8-1C63A060AAB3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPI", "WebAPI\WebAPI.csproj", "{2EAC4DD8-0444-4763-AF8E-6E3E0E8F143D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebAPI", "WebAPI\WebAPI.csproj", "{2EAC4DD8-0444-4763-AF8E-6E3E0E8F143D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Image", "Image", "{B93A0A02-BB9C-4E9D-8DC7-7BCFBDE94129}"
+	ProjectSection(SolutionItems) = preProject
+		..\logo.PNG = ..\logo.PNG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CarImage", "CarImage", "{E3604BE9-3B6F-480C-B3E0-C85D2FF69838}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +55,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3604BE9-3B6F-480C-B3E0-C85D2FF69838} = {B93A0A02-BB9C-4E9D-8DC7-7BCFBDE94129}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {324B76D1-AA13-4EFA-9571-F316DBC65A70}

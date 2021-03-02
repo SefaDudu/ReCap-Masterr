@@ -6,12 +6,12 @@ using System.Text;
 
 namespace Business.ValidationRules.FluentValidation
 {
-    public class UserValidator : AbstractValidator<User>
+    public class UserValidator : AbstractValidator<Rental>
     {
         public UserValidator()
         {
-            RuleFor(r => r.Email).NotEmpty();
-            RuleFor(r => r.FirstName).NotEmpty();
+            RuleFor(r => r.RentDate).NotEmpty();
+            RuleFor(r => r.ReturnDate).NotEmpty();
         }
     }
 }

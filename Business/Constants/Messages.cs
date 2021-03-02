@@ -34,6 +34,46 @@ namespace Business.Constants
         public static string UserEmailAlreadyExists = "Bu email adresine sahip bir kullanıcı zaten bulunuyor.";
         public static string UserRegistered = "Kullanıcı başarıyla kayıt edildi.";
         public static string UserAccessTokenCreatedSuccessful = "Access token başarıyla oluşturuldu.";
+        public static string UserAdded = "User Added";
+        public static string UserUpdated = "User Updated";
+        public static string UserDeleted = "User Deleted";
+        public static string UsersListed = "Users Listed";
+        //Error Messages
+        public static string BrandNameInvalid = "Brand Name is Invalid";
+        public static string ColorNameInvalid = "Color Name is Invalid";
+        public static string RentalInvalid = "The Car That You Wanted Isn't Available";
+        public static string MaintenanceTime = "Maintenance Mode";
+        public static string CarImageCountOfCarIdError = "A car can have only 5 photos";
+        public static string CarImagePathAlreadyExists = "Car path is already existed";
+      
+        public static string UserNotFound = "Kullanıcı bulunamadı.";
+        public static string PasswordError = "Parola hatası.";
+        public static string SuccessfulLogin = "Başarılı giriş.";
+        public static string UserAlreadyExists = "Kullanıcı mevcut.";
+        public static string AccessTokenCreated = "Token oluşturuldu.";
+        public static string CountOfCarImagesCorrect = "Bir arabanın en fazla 5 resmi olabilir";
+        public static string CarImageAdded = "Araba resmi eklendi";
+        public static string CarImageUpdated = "Araba resmi güncellendi";
+        public static string CarImageDeleted = "Araba resmi silindi";
+        public static string IncorrectFileExtension = "Resim uzantısı hatalı";
+        public static string FileNotFound = "Dosya belirtilen yolda bulunamadı";
+       
+        public static string CarNameAndPriceInvalid = "Araç eklendi";
+        public static string OutUse = "Mesai saatleri dışındasın. Sistem kullanım dışı";
+        public static string CarListed = "Araç Listelendi";
+
+        public static string CarDetailed = "Araç detaylandırıldı";
+       
+        public static string BrandAdded = "Marka Eklendi";
+        public static string BrandDeleted = "Marka Silindi";
+        public static string BrandUpdated = "Marka güncellendi";
+        public static string ColorUpdated = "Renk güncellendi";
+        public static string ColorDeleted = "Renk silindi";
+        public static string ColorAdded = "Renk eklendi";
+        public static string RentalAdded = "Kiralama işlemi başarılı";
+        public static string ImagesAdded = "Fotoğraf eklendi";
+        public static string FailAddedImageLimit = "Fotoğraf ekleyemezsiniz limite ulaşıldı";
+       
 
     }
 }

@@ -13,6 +13,7 @@ using Business.Constants;
 using Core.CrossCuttingConcerns.Validation;
 using Business.ValidationRules.FluentValidation;
 using Core.Aspects.Autofac.Validation;
+using Business.BusinessAspects.Autofac;
 
 namespace Business.Concrete
 {
@@ -25,23 +26,17 @@ namespace Business.Concrete
             _carDal = carDal;
         }
         [ValidationAspect(typeof(CarValidator))]
+        [SecuredOperation("product.add,admin")]
         public IResult Add(Car car)
         {
 
-           
-            
+        
             _carDal.Add(car);
                 
             return new SuccessResult(Messages.CarAdded);
-
-            
-        
-            
-             
-            
+   
         }
 
-        
 
         public IResult Delete(Car car)
         {
@@ -49,7 +44,8 @@ namespace Business.Concrete
             return new SuccessResult(Messages.CarDeleted);
 
         }
-
+      
+        
         public IDataResult<List<Car>> GetAll()
         {
             //if if if 

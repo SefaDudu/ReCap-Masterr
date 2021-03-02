@@ -8,7 +8,6 @@ using System.Text;
 
 namespace Business.Abstract
 {
-
     public interface IAuthService
     {
         IDataResult<User> Register(UserForRegisterDto userForRegisterDto, string password);

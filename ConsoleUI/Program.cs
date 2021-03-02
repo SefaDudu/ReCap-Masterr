@@ -17,7 +17,7 @@ namespace ConsoleUI
             //RentalTest();
             //ListCustomer();
             //UserList();
-            RentalList();
+           // RentalList();
             //RentalAdd();
         }
 
@@ -38,15 +38,15 @@ namespace ConsoleUI
             }
         }
 
-        private static void UserList()
-        {
-            UserManager userManager = new UserManager(new EfUserDal());
-            var result = userManager.GetAll();
-            foreach (var user in result.Data)
-            {
-                Console.WriteLine(user.FirstName);
-            }
-        }
+        //private static void UserList()
+        //{
+        //    UserManager userManager = new UserManager(new EfUserDal());
+        //    var result = userManager.GetAll();
+        //    foreach (var user in result.Data)
+        //    {
+        //        Console.WriteLine(user.FirstName);
+        //    }
+        //}
 
         private static void ListCustomer()
         {

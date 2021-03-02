@@ -8,8 +8,10 @@ using Castle.DynamicProxy;
 using Microsoft.Extensions.DependencyInjection;
 using Core.Extensions;
 using Business.Constants;
+
 namespace Business.BusinessAspects.Autofac
 {
+
     public class SecuredOperation : MethodInterception
     {
         private string[] _roles;
